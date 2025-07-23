@@ -1,0 +1,47 @@
+.sidenav{
+    background-color: #E7ECEF;
+    height: 100vh;
+    width: 225px;
+    color: rgb(80, 80, 80);
+    position: fixed;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    box-shadow: 
+        inset -2px -2px 5px rgba(255, 255, 255, 0.1),  
+        inset 2px 2px 5px rgba(0, 0, 0, 0.4),
+        4px 0 10px rgba(0, 0, 0, 0.6);             
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sidenav a:hover{
+    background-color: #000000;
+}
+
+.sidenav a{
+    color: rgb(80, 80, 80);
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 40px;
+    transition: background-color 0.5s;
+    font-size: 20px;
+}
+.sidenav i{
+    padding-right: 10px;
+    font-size: 34px;
+}
+
+.content{
+    padding: 16px;
+    background-color: #6096BA;
+    margin-left: 20px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.container{
+    height: 95vh;
+}
+

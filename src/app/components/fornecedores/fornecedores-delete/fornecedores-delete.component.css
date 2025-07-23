@@ -1,0 +1,22 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px; 
+}
+
+mat-card {
+  width: 100%;
+  max-width: 1300px; 
+  height: 700px;
+  padding: 24px;
+ background-color: #E7ECEF;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    margin: 20px 15px 0px 0px;
+}

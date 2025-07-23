@@ -1,0 +1,27 @@
+<div class="card-container">
+    <mat-card>
+        <mat-card-title>Excluir Cliente</mat-card-title>
+        <form>
+            <mat-form-field>
+                <input matInput placeholder="Nome" [value]="cliente.nome_cli" name="nome_cli" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Cpf" [value]="cliente.cpf_cli" name="cpf_cli" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Telefone" [value]="cliente.telefone_cli" name="telefone_cli" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Email" [value]="cliente.email_cli" name="email_cli" disabled>
+            </mat-form-field>
+        </form>
+
+        <button mat-raised-button (click)="deleteCliente()" color="warn">
+            Excluir
+        </button>
+        
+        <button mat-raised-button (click)="cancel()">
+            Cancelar
+        </button>
+    </mat-card>
+</div>

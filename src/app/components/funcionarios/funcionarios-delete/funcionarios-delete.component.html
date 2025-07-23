@@ -1,0 +1,28 @@
+<div class="card-container">
+    <mat-card>
+        <mat-card-title>Excluir Funcionario</mat-card-title>
+        <form>
+            <mat-form-field>
+                <input matInput placeholder="Nome" [value]="funcionario.nome_func" name="nome_func" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="CPF" [value]="funcionario.cpf_func" name="cpf_func" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Telefone" [value]="funcionario.telefone_func" name="telefone_func" disabled>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Email" [value]="funcionario.email_func" name="email_func" disabled>
+            </mat-form-field>
+        </form>
+
+        <button mat-raised-button (click)="deleteFuncionario()" color="warn">
+            Excluir
+        </button>
+        
+        <button mat-raised-button (click)="cancel()">
+            Cancelar
+        </button>
+    </mat-card>
+</div>
+

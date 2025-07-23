@@ -1,0 +1,22 @@
+.home {
+    background-color: #A3CEF1;
+    box-shadow: 
+        inset -2px -2px 5px rgba(255, 255, 255, 0.1),  
+        inset 2px 2px 5px rgba(0, 0, 0, 0.4),          
+        4px 0 10px rgba(0, 0, 0, 0.6);              
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: 65px;
+    text-align: center;
+}
+
+.home .title{
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: rgb(80, 80, 80);
+}
+
+.home .subtitle{
+    font-size: 1.1rem;
+    color: rgb(80, 80, 80);
+}

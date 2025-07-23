@@ -1,0 +1,36 @@
+.header{
+    display: flex;
+    align-items: center;
+    background-color:#A3CEF1;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 
+        inset -2px -2px 5px rgba(255, 255, 255, 0.1),  
+        inset 2px 2px 5px rgba(0, 0, 0, 0.4),          
+        4px 0 10px rgba(0, 0, 0, 0.6);                
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-left: 215px;
+    padding-right: 20px;
+}
+
+.header .logo {
+    max-height: 32px;
+    color: #000000;
+}
+
+.header .title-group{
+    padding-left: 25px;
+    color: #000000;
+}
+
+.header .title-group i {
+    padding-right: 5px;
+    color: #000000;
+}
+
