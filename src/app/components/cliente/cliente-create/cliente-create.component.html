@@ -3,16 +3,16 @@
         <mat-card-title>Novo Cliente</mat-card-title>
         <form>
             <mat-form-field>
-                <input matInput placeholder="Nome" [(ngModel)]="cliente.nome_cli" name="nome_cli">
+                <input matInput placeholder="Nome" [(ngModel)]="cliente.nome_cli" name="nome_cli" required maxlength="100">
             </mat-form-field>
             <mat-form-field>
-                <input matInput placeholder="Cpf" [(ngModel)]="cliente.cpf_cli" name="cpf_cli">
+                <input matInput placeholder="Cpf" [value]="cpfFormatado" [(ngModel)]="cliente.cpf_cli"  name="cpf_cli" (input)="onCpfInput($event)" required maxlength="14">
             </mat-form-field>
             <mat-form-field>
-                <input matInput placeholder="Telefone" [(ngModel)]="cliente.telefone_cli" name="telefone_cli">
+                <input matInput placeholder="Telefone" [value]="telefoneFormatado" [(ngModel)]="cliente.telefone_cli" name="telefone_cli" (input)="onTelefoneInput($event)" required maxlength="15">
             </mat-form-field>
             <mat-form-field>
-                <input matInput placeholder="Email" [(ngModel)]="cliente.email_cli" name="email_cli">
+                <input matInput placeholder="Email" [(ngModel)]="cliente.email_cli" name="email_cli" required>
             </mat-form-field>
         </form>
 
