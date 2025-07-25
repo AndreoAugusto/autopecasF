@@ -15,3 +15,13 @@ table{
 .delete > i{
     color: #e35e6b;
 }
+
+
+.search-container   {
+    margin-top: -85px;
+    margin-left: 180px;
+}
+
+.search-container .custom-search    {
+    width: 100%;
+}

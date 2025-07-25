@@ -3,16 +3,16 @@
         <mat-card-title>Alterar Funcionario</mat-card-title>
         <form>
             <mat-form-field>
-                <input matInput placeholder="Nome" [(ngModel)]="funcionario.nome_func" name="nome_func">
+                <input matInput placeholder="Nome" [(ngModel)]="funcionario.nome_func" name="nome_func" required maxlength="100">
             </mat-form-field>
             <mat-form-field>
-                <input matInput placeholder="CPF" [(ngModel)]="funcionario.cpf_func" name="cpf_func">
+                <input matInput placeholder="CPF" [(ngModel)]="funcionario.cpf_func" name="cpf_func" disabled>
             </mat-form-field>
             <mat-form-field>
-                <input matInput placeholder="Telefone" [(ngModel)]="funcionario.telefone_func" name="telefone_func">
+                <input matInput placeholder="Telefone" [value]="telefoneFormatado" [(ngModel)]="funcionario.telefone_func" name="telefone_func" (input)="onTelefoneInput($event)" required maxlength="15">
             </mat-form-field>
             <mat-form-field>
-                <input matInput placeholder="Email" [(ngModel)]="funcionario.email_func" name="email_func">
+                <input matInput placeholder="Email" [(ngModel)]="funcionario.email_func" name="email_func" required maxlength="100">
             </mat-form-field>
         </form>
 

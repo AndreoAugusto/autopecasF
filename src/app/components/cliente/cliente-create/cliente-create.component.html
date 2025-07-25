@@ -3,7 +3,7 @@
         <mat-card-title>Novo Cliente</mat-card-title>
         <form>
             <mat-form-field>
-                <input matInput placeholder="Nome" [(ngModel)]="cliente.nome_cli" name="nome_cli" required maxlength="100">
+                <input matInput placeholder="Nome" [(ngModel)]="cliente.nome_cli" name="nome_cli" required maxlength="100" minlength="3">
             </mat-form-field>
             <mat-form-field>
                 <input matInput placeholder="Cpf" [value]="cpfFormatado" [(ngModel)]="cliente.cpf_cli"  name="cpf_cli" (input)="onCpfInput($event)" required maxlength="14">

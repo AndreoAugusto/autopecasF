@@ -1,11 +1,12 @@
-<!--<ul>
-    <li *ngFor="let product of products">
-        {{product.id}} => {{product.name}} => {{product.price}}
-    </li>
-</ul> -->
+<div class="search-container">
+  <mat-form-field appearance="outline" class="custom-search">
+    <mat-label>Buscar por nome ou CPF</mat-label>
+    <input matInput [(ngModel)]="filtro" (ngModelChange)="filtrarfuncionarios()" placeholder="Buscar..." />
+  </mat-form-field>
+</div>
 
 <div class="mat-elevation-z4">
-    <table mat-table [dataSource]="funcionarios">
+    <table mat-table [dataSource]="funcionariosFiltrados">
       <!-- Id Column -->
       <ng-container matColumnDef="id_funcionario">
         <th mat-header-cell *matHeaderCellDef>ID</th>
@@ -58,5 +59,10 @@
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
+
+    <div *ngIf="funcionariosFiltrados.length === 0" class="no-results">
+    Nenhum cliente encontrado.
+  </div>
+
   </div>
 
